@@ -1,0 +1,83 @@
+@import "../../../styles/variables";
+
+.navbar {
+  background-color: $gmail-theme-color;
+  color: $gmail-font-color;
+  border-bottom: 1px solid $gmail-bottom-border-color;
+  div {
+    vertical-align: middle;
+
+    #gmail-header-compact-view {
+      font-size: 1.6rem;
+    }
+  }
+
+  #gmail-header-logo {
+    background: url("../../../assets/images/gmail.png");
+    height: 3rem;
+    width: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-inline-box;
+  }
+
+  #gmail-header-title {
+    font-size: 1.8rem;
+  }
+}
+
+#adv-search {
+  background-color: $gmail-search-color;
+  border-radius: 10px;
+  height: 4rem;
+  margin: 0 auto;
+  align-content: center;
+  padding: 1rem;
+
+  input {
+    border: none;
+    background-color: $gmail-search-color;
+    font-size: 1.4rem;
+    color: $gmail-font-color;
+  }
+
+  button {
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: none;
+    color: $gmail-font-color;
+  }
+
+  input:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  input::placeholder {
+    color: $gmail-font-color;
+  }
+
+  button:focus {
+    border: none;
+    box-shadow: none;
+    background-color: #80808073;
+  }
+
+  button:hover {
+    border: none;
+    box-shadow: none;
+    background-color: #80808073;
+  }
+}
+@media screen and (min-width: 768px) {
+  #adv-search {
+    width: 500px;
+  }
+  .dropdown.dropdown-lg {
+    position: static !important;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 500px;
+  }
+}
