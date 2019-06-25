@@ -39,6 +39,22 @@
             },
             "subject": "Bijli Bill",
             "content": "Hi , YOu have a Bijli of sum of Rs 20000 so you last date of paying this bill is 1-8-2019."
+        },
+        {
+            "contact_info": {
+                "name": "MDN School",
+                "email": "suresh@mdn_school.com"
+            },
+            "subject": "Parent Metting Invitation",
+            "content": "This is to notify you that this comming saturday we are going to keep a parent children meeting in which wwe discuss on your chidren progress stauts"
+        },
+        {
+            "contact_info": {
+                "name": "House Loan EMI",
+                "email": "bank_xvsvsv@abcbank.com"
+            },
+            "subject": "!!!! Gentle Reminder for House Loan EMI",
+            "content": "This is system auto generated mail to remind you that you housr loan EMI for this month is pending please pay this ASAP."
         }
     ]
 }
