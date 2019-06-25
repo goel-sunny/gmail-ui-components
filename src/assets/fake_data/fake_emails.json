@@ -1,0 +1,44 @@
+{
+    "emails": [
+        {
+            "contact_info": {
+                "name": "Amit Sharma",
+                "email": "amit.sharma@gmail.com"
+            },
+            "subject": "Sale on Electronics Items",
+            "content": "Hi , We are calling from Amit Enterprise we have alot of offer's for you"
+        },
+        {
+            "contact_info": {
+                "name": "Rohit Jain",
+                "email": "rohit.jain@gmail.com"
+            },
+            "subject": "Sharing Details of Appartment Located in Delhi East",
+            "content": "Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms"
+        },
+        {
+            "contact_info": {
+                "name": "Suresh Bajpai",
+                "email": "Suresh.Bajpai@gmail.com"
+            },
+            "subject": "Sharing Details of Appartment Located in Delhi East",
+            "content": "Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms"
+        },
+        {
+            "contact_info": {
+                "name": "Ujawal Saxena",
+                "email": "ujawal.saxena@hotmail.com"
+            },
+            "subject": "JOB Oppurtunity",
+            "content": "Hi , We are calling from a reputed firm  we have a JOB opening for you for the role of so nd so have you interested if then please revert back on the same"
+        },
+        {
+            "contact_info": {
+                "name": "Govt.",
+                "email": "bijli.bill@hotmail.com"
+            },
+            "subject": "Bijli Bill",
+            "content": "Hi , YOu have a Bijli of sum of Rs 20000 so you last date of paying this bill is 1-8-2019."
+        }
+    ]
+}
