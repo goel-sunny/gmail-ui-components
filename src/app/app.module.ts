@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
 
+/**import gmail infrastructure module */
+import { GmailInfrastructureModule } from './gmail_infrastructure/gmail_infrastructure.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,8 @@ import { SideBarComponent } from './layout/side-bar/side-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GmailInfrastructureModule
   ],
   providers: [],
   bootstrap: [AppComponent]

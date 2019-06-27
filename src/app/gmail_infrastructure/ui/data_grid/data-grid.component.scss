@@ -1,0 +1,39 @@
+table {
+  width: calc(100vw - 400px);
+}
+
+.select-col {
+  width: 20px;
+}
+
+.description-container {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 300px;
+}
+
+.actionEnable-col {
+  justify-content: end;
+}
+
+.timeWidthClass {
+  width: calc(100vw - 700px);
+}
+
+.actionWidthClass {
+  width: calc(100vw - 800px);
+}
+
+.enable {
+  display: table-cell;
+  justify-content: end
+}
+
+.disable {
+  display: none;
+}
+
+.recieveTime-col {
+  justify-content: end;
+}

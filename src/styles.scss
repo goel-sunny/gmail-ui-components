@@ -5,6 +5,9 @@
 
 @import "../node_modules/font-awesome/scss/font-awesome.scss";
 
+/*adding of the angular material design theme*/
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
 html,
 body {
   font-size: 12px;

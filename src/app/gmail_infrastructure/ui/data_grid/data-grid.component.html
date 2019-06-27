@@ -1,0 +1,43 @@
+<!--  Gmail Data Grid-->
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+        <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+            <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+        </td>
+    </ng-container>
+
+    <!-- contactInfo Column -->
+    <ng-container matColumnDef="contactInfo">
+        <td mat-cell class="contactInfo-col" *matCellDef="let element"> {{element.contactInfo}} </td>
+    </ng-container>
+
+    <!-- description Column -->
+    <ng-container matColumnDef="description">
+        <td mat-cell class="description-col" *matCellDef="let element">
+            <div class="description-container timeWidthClass">
+                <strong> {{element.description.subject }}</strong> - {{ element.description.content}}
+            </div>
+        </td>
+    </ng-container>
+
+    <!-- recieveTIme Column -->
+    <ng-container matColumnDef="recieveTime">
+        <td mat-cell class="recieveTime-col enable" *matCellDef="let element">
+            {{element.recieveTime}}
+        </td>
+    </ng-container>
+
+    <!-- action Enable Column -->
+    <ng-container matColumnDef="actionEnable">
+        <td mat-cell class="actionEnable-col disable" *matCellDef="let element">
+            <mail-action></mail-action>
+        </td>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: displayedColumns; " actionEnable>
+    </tr>
+</table>
