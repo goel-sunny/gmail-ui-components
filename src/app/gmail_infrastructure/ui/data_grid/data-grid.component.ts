@@ -8,28 +8,28 @@ import { GridDetailInterface } from '../../core/models/grid_data.interface';
 
 const GRID_DATA = [
     {
-        'contactInfo': 'abc@abc.com',
+        'contactInfo': 'amit.sharma@gmail.com',
         'description': {
-            'subject': 'Home Loan',
-            'content': 'it is temp description jflsjflsjflsjfsjfsjfsjflsjflsjflsjflsjflsflsjflsjflsjflsjflsjflsjflsjflsjflsjflsjflsjflsjflsjflsjflksjflsjf  Sunny Goel let;s do this  ok cool',
+            'subject': 'Sale on Electronics Items',
+            'content': 'Hi , We are calling from Amit Enterprise we have alot of offer\'s for you',
         },
         'recieveTime': '8:00PM',
         'actionEnable': false
     },
     {
-        'contactInfo': 'babc@abc.com',
+        'contactInfo': 'ujawal.saxena@hotmail.com',
         'description': {
-            'subject': 'Flipart Fashion',
-            'content': 'it is temp description    ',
+            'subject': 'JOB Oppurtunity',
+            'content': 'Hi , We are calling from a reputed firm  we have a JOB opening for you for the role of so nd so have you interested if then please revert back on the same',
         },
         'recieveTime': '8:00PM',
         'actionEnable': false
     },
     {
-        'contactInfo': 'cabc@abc.com',
+        'contactInfo': 'Suresh.Bajpai@gmail.com',
         'description': {
-            'subject': 'Job Requirement',
-            'content': 'it is temp description    ',
+            'subject': 'Sharing Details of Appartment Located in Delhi East',
+            'content': 'Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms',
         },
         'recieveTime': '8:00PM',
         'actionEnable': false
