@@ -2,6 +2,10 @@ table {
   width: calc(100vw - 400px);
 }
 
+td {
+  padding-right: 10px !important;
+}
+
 .select-col {
   width: 20px;
 }
@@ -11,6 +15,7 @@ table {
   white-space: nowrap;
   text-overflow: ellipsis;
   min-width: 300px;
+  width: inherit;
 }
 
 .actionEnable-col {
@@ -18,16 +23,16 @@ table {
 }
 
 .timeWidthClass {
-  width: calc(100vw - 700px);
+  width: calc(100vw - 700px) !important;
 }
 
 .actionWidthClass {
-  width: calc(100vw - 800px);
+  width: calc(100vw - 800px) !important;
 }
 
 .enable {
   display: table-cell;
-  justify-content: end
+  justify-content: end;
 }
 
 .disable {
@@ -36,4 +41,9 @@ table {
 
 .recieveTime-col {
   justify-content: end;
+}
+
+mail-action {
+  width: 9rem;
+  display: block;
 }

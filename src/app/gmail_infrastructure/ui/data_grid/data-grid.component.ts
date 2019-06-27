@@ -73,13 +73,6 @@ export class DataGridComponent {
         // return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
     }
 
-    displayAction(row) {
-        row.actionEnable = true;
-    }
-
-    hideAction(row) {
-        row.actionEnable = false;
-    }
 
     performAction() {
 

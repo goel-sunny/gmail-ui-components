@@ -1,4 +1,4 @@
-<!--  Gmail Data Grid-->
+ <!-- Gmail Data Grid -->
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!-- Checkbox Column -->
@@ -17,8 +17,8 @@
 
     <!-- description Column -->
     <ng-container matColumnDef="description">
-        <td mat-cell class="description-col" *matCellDef="let element">
-            <div class="description-container timeWidthClass">
+        <td mat-cell class="description-col timeWidthClass" *matCellDef="let element">
+            <div class="description-container ">
                 <strong> {{element.description.subject }}</strong> - {{ element.description.content}}
             </div>
         </td>
