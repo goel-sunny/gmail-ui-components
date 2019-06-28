@@ -13,12 +13,14 @@
     <!-- starred  Column -->
     <ng-container matColumnDef="starred">
         <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+            <span class="fa fa-star-o" arial-hidden="true"></span>
         </td>
     </ng-container>
 
     <!-- important Column -->
     <ng-container matColumnDef="important">
         <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+            <i class="material-icons">label_important</i>
         </td>
     </ng-container>
 
