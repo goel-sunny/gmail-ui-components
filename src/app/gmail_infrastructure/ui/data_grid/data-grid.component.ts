@@ -8,32 +8,34 @@ import { GridDetailInterface } from '../../core/models/grid_data.interface';
 
 const GRID_DATA = [
     {
+        'starred': false,
+        'important': false,
         'contactInfo': 'amit.sharma@gmail.com',
         'description': {
             'subject': 'Sale on Electronics Items',
             'content': 'Hi , We are calling from Amit Enterprise we have alot of offer\'s for you',
         },
-        'recieveTime': '8:00PM',
-        'actionEnable': false
+        'recieveTime': '8:00PM'
     },
     {
+        'starred': false,
+        'important': false,
         'contactInfo': 'ujawal.saxena@hotmail.com',
         'description': {
             'subject': 'JOB Oppurtunity',
             'content': 'Hi , We are calling from a reputed firm  we have a JOB opening for you for the role of so nd so have you interested if then please revert back on the same',
         },
-        'recieveTime': '8:00PM',
-        'actionEnable': false
+        'recieveTime': '8:00PM'
     },
     {
+        'starred': false,
+        'important': false,
         'contactInfo': 'Suresh.Bajpai@gmail.com',
         'description': {
             'subject': 'Sharing Details of Appartment Located in Delhi East',
             'content': 'Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms',
         },
-        'recieveTime': '8:00PM',
-        'actionEnable': false
-
+        'recieveTime': '8:00PM'
     },
 
 
@@ -47,7 +49,7 @@ const GRID_DATA = [
 
 export class DataGridComponent {
 
-    displayedColumns: string[] = ['select', 'contactInfo', 'description', 'recieveTime', 'actionEnable'];
+    displayedColumns: string[] = ['select', 'starred', 'important', 'contactInfo', 'description', 'recieveTime'];
     dataSource = new MatTableDataSource<GridDetailInterface>(GRID_DATA);
     selection = new SelectionModel<GridDetailInterface>(true, []);
 

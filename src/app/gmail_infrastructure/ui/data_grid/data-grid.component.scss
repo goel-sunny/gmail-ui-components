@@ -15,24 +15,17 @@ td {
   white-space: nowrap;
   text-overflow: ellipsis;
   min-width: 300px;
-  width: inherit;
+  width: calc(100vw - 700px) !important;
 }
 
 .actionEnable-col {
   justify-content: end;
 }
 
-.timeWidthClass {
-  width: calc(100vw - 700px) !important;
-}
-
-.actionWidthClass {
-  width: calc(100vw - 800px) !important;
-}
-
 .enable {
-  display: table-cell;
-  justify-content: end;
+  display: -moz-flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
 }
 
 .disable {
@@ -41,9 +34,4 @@ td {
 
 .recieveTime-col {
   justify-content: end;
-}
-
-mail-action {
-  width: 9rem;
-  display: block;
 }

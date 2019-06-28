@@ -1,9 +1,9 @@
 export interface GridDetailInterface {
+    starred: boolean;
+    important: boolean;
     contactInfo: string;
     description: MailInfo;
     recieveTime: string;
-    actionEnable: boolean;
-
 }
 
 interface MailInfo {
