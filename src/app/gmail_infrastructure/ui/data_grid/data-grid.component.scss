@@ -15,24 +15,17 @@ td {
   white-space: nowrap;
   text-overflow: ellipsis;
   min-width: 300px;
-  width: inherit;
+  width: calc(100vw - 700px) !important;
 }
 
 .actionEnable-col {
   justify-content: end;
 }
 
-.timeWidthClass {
-  width: calc(100vw - 700px) !important;
-}
-
-.actionWidthClass {
-  width: calc(100vw - 800px) !important;
-}
-
 .enable {
-  display: table-cell;
-  justify-content: end;
+  display: -moz-flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
 }
 
 .disable {
@@ -43,7 +36,24 @@ td {
   justify-content: end;
 }
 
-mail-action {
-  width: 9rem;
-  display: block;
+.fa-star-o {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  vertical-align: text-bottom;
+
+  &:hover {
+    background-color: #8080804d;
+    border-radius: 2rem;
+  }
+}
+
+.material-icons {
+  vertical-align: text-bottom;
+  font-size: 2.1rem;
+  padding: .4rem;
+
+  &:hover {
+    background-color: #8080804d;
+    border-radius: 2rem;
+  }
 }
