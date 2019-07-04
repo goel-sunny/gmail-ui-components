@@ -1,0 +1,14 @@
+.list-items {
+  .d-block {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    margin: 0.5rem 2rem 0.5rem 0;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.10196078431372549);
+    }
+  }
+}
