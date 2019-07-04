@@ -1,4 +1,6 @@
 .list-items {
+  color: #808080ed;
+
   .d-block {
     font-size: 1.3rem;
     font-weight: 700;
@@ -10,5 +12,9 @@
     &:hover {
       background-color: rgba(128, 128, 128, 0.10196078431372549);
     }
+  }
+
+  .material-icons-class {
+    vertical-align: middle;
   }
 }
