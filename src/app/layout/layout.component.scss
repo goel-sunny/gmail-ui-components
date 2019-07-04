@@ -1,11 +1,17 @@
+.row,
+.col {
+  padding: 0;
+  margin: 0;
+}
+
 .sidebar-pane {
-  width: 300px;
+  width: 400px;
 }
 
 .main-pane {
-  width: calc(100% - 400px);
+  width: calc(100% - 475px);
 }
 
 .right-pane {
-  width: 100px;
+  width: 75px;
 }
