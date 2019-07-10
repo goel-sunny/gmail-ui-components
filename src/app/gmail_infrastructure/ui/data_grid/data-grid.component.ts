@@ -10,6 +10,7 @@ const GRID_DATA = [
     {
         'starred': false,
         'important': false,
+        'snoozed': false,
         'contactInfo': 'amit.sharma@gmail.com',
         'description': {
             'subject': 'Sale on Electronics Items',
@@ -20,6 +21,7 @@ const GRID_DATA = [
     {
         'starred': false,
         'important': false,
+        'snoozed': false,
         'contactInfo': 'ujawal.saxena@hotmail.com',
         'description': {
             'subject': 'JOB Oppurtunity',
@@ -30,6 +32,7 @@ const GRID_DATA = [
     {
         'starred': false,
         'important': false,
+        'snoozed': false,
         'contactInfo': 'Suresh.Bajpai@gmail.com',
         'description': {
             'subject': 'Sharing Details of Appartment Located in Delhi East',
@@ -37,8 +40,72 @@ const GRID_DATA = [
         },
         'recieveTime': '8:00PM'
     },
-
-
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "amit.sharma@gmail.com",
+        "description": {
+            "subject": "Sale on Electronics Items",
+            "content": "Hi , We are calling from Amit Enterprise we have alot of offer's for you"
+        },
+        'recieveTime': '8:00PM'
+    },
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "rohit.jain@gmail.com",
+        "description": {
+            "subject": "Sharing Details of Appartment Located in Delhi East",
+            "content": "Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms"
+        },
+        'recieveTime': '8:00PM'
+    },
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "Suresh.Bajpai@gmail.com",
+        "description": {
+            "subject": "Sharing Details of Appartment Located in Delhi East",
+            "content": "Hi , I am calling from Brokekr Company we have a good deal for you, we have an appartment located at East Delhi , following are the details of the apppartment , it is 2bhk having  seperate bathroom in each room and balcony attached with both the rooms"
+        },
+        'recieveTime': '8:00PM'
+    },
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "bijli.bill@hotmail.com",
+        "description": {
+            "subject": "Bijli Bill",
+            "content": "Hi , YOu have a Bijli of sum of Rs 20000 so you last date of paying this bill is 1-8-2019."
+        },
+        'recieveTime': '8:00PM'
+    },
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "suresh@mdn_school.com",
+        "description": {
+            "subject": "Parent Metting Invitation",
+            "content": "This is to notify you that this comming saturday we are going to keep a parent children meeting in which wwe discuss on your chidren progress stauts"
+        },
+        'recieveTime': '8:00PM'
+    },
+    {
+        'starred': false,
+        'important': false,
+        'snoozed': false,
+        "contactInfo": "bank_xvsvsv@abcbank.com",
+        "description": {
+            "subject": "!!!! Gentle Reminder for House Loan EMI",
+            "content": "This is system auto generated mail to remind you that you housr loan EMI for this month is pending please pay this ASAP."
+        },
+        'recieveTime': '8:00PM'
+    }
 ];
 
 @Component({
