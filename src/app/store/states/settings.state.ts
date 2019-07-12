@@ -8,7 +8,7 @@ export interface IGeneralSettings {
     language: ILanguage;  // for Internationalisation.
     phoneNo: IphoneNo;
     paggingSize: number;
-    defaultReplyBehaviour: DefaultReplyBehaviour;
+    defaultReplyBehaviour: EDefaultReplyBehaviour;
     hoverActions: boolean; // display hover actions  
     dynamicEmails: boolean;
     smartCompose: boolean; // add AI while composing
@@ -29,7 +29,7 @@ export interface ILabelSettings {
 }
 
 export interface IInboxSettings {
-    inboxType: InboxType;
+    inboxType: EInboxType;
     categories: ICategoriesType;
     importanceMarker: IImportanceMarker;
     filterMailOverride: boolean;
@@ -49,7 +49,7 @@ export interface IphoneNo {
 }
 
 // Default reply behaviour when click on reply button
-export enum DefaultReplyBehaviour {
+export enum EDefaultReplyBehaviour {
     REPLY = 0,
     REPLYALL
 }
@@ -61,7 +61,7 @@ export interface CreateNewLabels {
 
 
 // inbox type
-export enum InboxType {
+export enum EInboxType {
     DEFAULT = 1,
     IMPORTANT_FIRST,
     UNREAD_FIRST,
