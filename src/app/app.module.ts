@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { GmailInfrastructureModule } from './gmail_infrastructure/gmail_infrastructure.module';
 
 import { LayoutModule } from './layout/layout.module';
+import { SettingsModule } from './settings/settings.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LayoutModule } from './layout/layout.module';
     BrowserModule,
     AppRoutingModule,
     GmailInfrastructureModule,
-    LayoutModule
+    LayoutModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
