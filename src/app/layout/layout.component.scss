@@ -4,14 +4,27 @@
   margin: 0;
 }
 
+app-nav-bar {
+  width: 100%;
+}
+
 .sidebar-pane {
-  width: 400px;
+  width: 250px;
+  height: 740px;
+  app-side-bar {
+    width: auto;
+    border-left: 1px solid;
+  }
 }
 
 .main-pane {
-  width: calc(100% - 475px);
+  width: calc(100vw - 310px);
+  min-height: 1px;
+  overflow-y: auto;
 }
 
 .right-pane {
-  width: 75px;
+  width: 60px !important;
+  height: 740px;
+  border-left: 1px solid rgba(128, 128, 128, 0.45);
 }

@@ -8,8 +8,12 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { SideBarComponent } from './side-bar/side-bar.component';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 @NgModule({
-    imports: [RouterModule],
+    imports: [RouterModule,
+        BsDropdownModule.forRoot()
+    ],
     exports: [LayoutComponent],
     declarations: [
         LayoutComponent,

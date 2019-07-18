@@ -5,10 +5,15 @@ import { GeneralSettingsComponent } from './ui/general-settings/general-settings
 import { LabelSettingsComponent } from './ui/label-settings/label-settings.component';
 import { InboxSettingsComponent } from './ui/inbox-settings/inbox-settings.component';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [SettingsComponent, GeneralSettingsComponent, LabelSettingsComponent, InboxSettingsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      
+    ])
   ]
 })
 export class SettingsModule { }

@@ -1,3 +1,18 @@
-<p>
-  settings works!
-</p>
+<div class="d-flex settings-header">
+  <div class="left h3">
+    Settings
+  </div>
+  <div class="right">
+  </div>
+</div>
+
+<div class="settings-tabs">
+  <span>General</span>
+  <span>Labels</span>
+  <span>Inbox</span>
+</div>
+
+<div class="settings-body">
+  <router-outlet></router-outlet>
+  <app-general-settings></app-general-settings>
+</div>

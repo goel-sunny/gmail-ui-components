@@ -1,59 +1,90 @@
-<!-- Gmail Data Grid -->
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<div class="p-2">
+    <div class="float-left">
+        <div class="btn-group" dropdown>
+            <button type="button" class="btn">
+                <i class="fa fa-check-square" aria-hidden="true"></i>
+            </button>
+            <button id="button-split" type="button" dropdownToggle class="btn dropdown-toggle dropdown-toggle-split"
+                aria-controls="dropdown-split">
+                <span class="caret"></span>
+                <span class="sr-only">Split button!</span>
+            </button>
+            <ul id="dropdown-split" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-split">
+                <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Something else
+                        here</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="float-right">
+        def
+    </div>
+</div>
 
-    <!-- Checkbox Column -->
-    <ng-container matColumnDef="select">
-        <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
-            <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
-                [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
-            </mat-checkbox>
-        </td>
-    </ng-container>
+<div>
+    <!-- Gmail Data Grid -->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-    <!-- starred  Column -->
-    <ng-container matColumnDef="starred">
-        <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
-            <span class="fa fa-star-o" arial-hidden="true"></span>
-        </td>
-    </ng-container>
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select">
+            <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+                <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                    [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+                </mat-checkbox>
+            </td>
+        </ng-container>
 
-    <!-- important Column -->
-    <ng-container matColumnDef="important">
-        <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
-            <i class="material-icons">label_important</i>
-        </td>
-    </ng-container>
+        <!-- starred  Column -->
+        <ng-container matColumnDef="starred">
+            <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+                <span class="fa fa-star-o" arial-hidden="true"></span>
+            </td>
+        </ng-container>
 
-    <!-- contactInfo Column -->
-    <ng-container matColumnDef="contactInfo">
-        <td mat-cell class="contactInfo-col" *matCellDef="let element"> {{element.contactInfo}} </td>
-    </ng-container>
+        <!-- important Column -->
+        <ng-container matColumnDef="important">
+            <td mat-cell class="select-col" *matCellDef="let row" (click)="selection.toggle(row)">
+                <i class="material-icons">label_important</i>
+            </td>
+        </ng-container>
 
-    <!-- description Column -->
-    <ng-container matColumnDef="description">
-        <td mat-cell class="description-col timeWidthClass" *matCellDef="let element">
-            <div class="description-container ">
-                <strong> {{element.description.subject }}</strong> - {{ element.description.content}}
-            </div>
-            <div class="disable">
-                <mail-action></mail-action>
-            </div>
-        </td>
-    </ng-container>
+        <!-- contactInfo Column -->
+        <ng-container matColumnDef="contactInfo">
+            <td mat-cell class="contactInfo-col" *matCellDef="let element"> {{element.contactInfo}} </td>
+        </ng-container>
 
-    <!-- recieveTIme Column -->
-    <ng-container matColumnDef="recieveTime">
-        <td mat-cell class="recieveTime-col" *matCellDef="let element">
-            {{element.recieveTime}}
-        </td>
-    </ng-container>
+        <!-- description Column -->
+        <ng-container matColumnDef="description">
+            <td mat-cell class="description-col timeWidthClass" *matCellDef="let element">
+                <div class="description-container ">
+                    <strong> {{element.description.subject }}</strong> - {{ element.description.content}}
+                </div>
+                <div class="disable">
+                    <mail-action></mail-action>
+                </div>
+            </td>
+        </ng-container>
 
-    <!-- action Enable Column
+        <!-- recieveTIme Column -->
+        <ng-container matColumnDef="recieveTime">
+            <td mat-cell class="recieveTime-col" *matCellDef="let element">
+                {{element.recieveTime}}
+            </td>
+        </ng-container>
+
+        <!-- action Enable Column
     <ng-container matColumnDef="actionEnable">
         <td mat-cell class="actionEnable-col disable" *matCellDef="let element">
         </td>
     </ng-container> -->
 
-    <tr mat-row *matRowDef="let row; columns: displayedColumns; " actionEnable>
-    </tr>
-</table>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns; " actionEnable>
+        </tr>
+    </table>
+
+</div>

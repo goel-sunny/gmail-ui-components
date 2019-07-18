@@ -1,0 +1,29 @@
+{
+    "userRecords": [
+        {
+            "userID": "mverma",
+            "emailID": "manish.verma@gmail.com",
+            "password": "mveram@2019"
+        },
+        {
+            "userID": "ssingh",
+            "emailID": "satish.singh@gmail.com",
+            "password": "ssingh@2019"
+        },
+        {
+            "userID": "dkumar",
+            "emailID": "dhruv.kumar@gmail.com",
+            "password": "dkumar@2019"
+        },
+        {
+            "userID": "kverma",
+            "emailID": "kamal.verma@gmail.com",
+            "password": "kveram@2019"
+        },
+        {
+            "userID": "hgoel",
+            "emailID": "harshit.goel@gmail.com",
+            "password": "hgoel@2019"
+        }
+    ]
+}

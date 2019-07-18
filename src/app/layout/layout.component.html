@@ -1,25 +1,18 @@
 <div class="row">
     <app-nav-bar></app-nav-bar>
 </div>
-
-<div class="row">
-    <div class="sidebar-pane col">
+<div class="d-flex">
+    <div class=" d-inline-flex sidebar-pane">
         <app-side-bar></app-side-bar>
     </div>
 
-    <div class="main-pane col">
-        <div class="d-inline-flex">
-            <div class="">
-                abc
-            </div>
-            <div class="justify-content-end">
-                def
-            </div>
+    <div class="d-inline-flex flex-column main-pane">
+ <div>
+            <router-outlet></router-outlet>
         </div>
-        <router-outlet></router-outlet>
     </div>
 
-    <div class="right-pane col">
+    <div class="d-inline-flex right-pane">
 
     </div>
 </div>
