@@ -1,5 +1,28 @@
+.btn-group {
+  .btn {
+    font-size: 1.5rem;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    &:hover{
+      border-radius: .5rem;
+      background-color: #8080803b
+    }
+
+    &:focus {
+      box-shadow: none ;
+    }    
+  }
+
+  &:focus {
+    border: 1px solid black;
+  }
+}
+
+
+
 table {
-  width: calc(100vw - 400px);
+  width: calc(100vw - 350px);
 }
 
 td {
